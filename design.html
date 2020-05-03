@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="static/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-lg-4 side-container">
+        <div class="welcome">
+          <i class="fa fa-film"></i>
+          <h2>PORTFOLIO</h2>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="design.html" class="active">Design</a>
+            </li>
+            <li>
+              <a href="concerts.html">Concerts</a>
+            </li>
+            <li>
+              <a href="festivals.html">Festivals</a>
+            </li>
+            <li>
+              <a href="graffiti.html">Graffiti</a>
+            </li>
+            <li>
+              <a href="markets.html">Markets</a>
+            </li>
+            <li>
+              <a href="sport.html">Sport</a>
+            </li>
+            <li>
+              <a href="video.html">Video</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-8 main-container">
+        <h1>DESIGN</h1>
+        <div class="grid">
+          <div class="grid-col grid-col--1"></div>
+          <div class="grid-col grid-col--2"></div>
+          <div class="grid-col grid-col--3"></div>
+
+          <div class="grid-item">
+            <img src="static/design/final3.jpg" />
+          </div>
+
+          <div class="grid-item">
+            <img src="static/design/holysmokesneww.jpg" />
+          </div>
+
+          <div class="grid-item">
+            <img src="static/design/geri.jpg" />
+          </div>
+
+          <div class="grid-item">
+            <img src="static/design/progression skate school logo new.png" />
+          </div>
+
+          <div class="grid-item">
+            <img src="static/design/glow with the flow2.jpg" />
+          </div>
+
+          <div class="grid-item">
+            <img src="static/design/inhellwewinfinal1000.jpg" />
+          </div>
+
+          <div class="grid-item">
+            <img
+              onclick="changeIt(this.src)"
+              src="static/design/prettyprettyplease.jpg"
+            />
+          </div>
+
+          <div class="grid-item">
+            <img src="static/design/reggae night.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img id="modalImg" src="static/design/reggae night.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+
+    <!-- Colcade -->
+    <script>
+      // selector string as first argument
+      var colc = new Colcade(".grid", {
+        columns: ".grid-col",
+        items: ".grid-item",
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
