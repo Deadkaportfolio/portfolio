@@ -8,12 +8,12 @@ body {
 
 @font-face {
   font-family: "Kiona";
-  src: URL("../static/fonts/kiona_2/Kiona-Regular.ttf") format("truetype");
+  src: URL("../fonts/kiona_2/Kiona-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Roboto";
-  src: URL("../static/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  src: URL("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
 }
 
 .welcome {
